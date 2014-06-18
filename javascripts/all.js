@@ -47857,7 +47857,7 @@ THREEx.KeyboardState.prototype.eventMatches = function(event, keyDesc) {
       this.camera.up = new THREE.Vector3(0, 0, 1);
       this.camera.lookAt(new THREE.Vector3(0, 0, 0));
       material = new THREE.MeshLambertMaterial({
-        map: THREE.ImageUtils.loadTexture('/images/middleman.png')
+        map: THREE.ImageUtils.loadTexture('images/middleman.png')
       });
       cube = new THREE.Mesh(new THREE.CubeGeometry(20, 20, 20), material);
       this.scene.add(cube);
@@ -47875,7 +47875,7 @@ THREEx.KeyboardState.prototype.eventMatches = function(event, keyDesc) {
         mapGeometry.vertices[i].z = elevation;
       }
       mapMaterial = new THREE.MeshLambertMaterial({
-        map: THREE.ImageUtils.loadTexture('/images/middleman.png')
+        map: THREE.ImageUtils.loadTexture('images/middleman.png')
       });
       map = new THREE.Mesh(mapGeometry, mapMaterial);
       this.scene.add(map);
