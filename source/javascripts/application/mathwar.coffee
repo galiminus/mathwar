@@ -20,7 +20,7 @@ class window.MathWar
     @camera.lookAt(new THREE.Vector3(0, 0, 0))
 
     material = new THREE.MeshLambertMaterial
-      map: THREE.ImageUtils.loadTexture('/images/middleman.png')
+      map: THREE.ImageUtils.loadTexture('images/middleman.png')
 
     cube = new THREE.Mesh(new THREE.CubeGeometry(20, 20, 20), material);
     @scene.add(cube);
@@ -39,7 +39,7 @@ class window.MathWar
       mapGeometry.vertices[i].z = elevation
 
     mapMaterial = new THREE.MeshLambertMaterial
-      map: THREE.ImageUtils.loadTexture('/images/middleman.png')
+      map: THREE.ImageUtils.loadTexture('images/middleman.png')
 
     map = new THREE.Mesh mapGeometry, mapMaterial
     @scene.add map
